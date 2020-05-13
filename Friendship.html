@@ -1,0 +1,103 @@
+<html> 
+<head> 
+<script> 
+
+function changeStyle() {
+
+var text = document.getElementsByTagName("p"); 
+for (var i = 0; i < paragraph.length; i++) { 
+paragraph[i].style.fontStyle = "italic"; 
+}
+
+
+var paragraph = document.getElementsByClassName("poem"); 
+
+var firstParaText = "paragraph[0].innerHTML; 
+var secondParaText= paragraph[1].innerHTML; 
+var addThem = paragraph[2].innerHTML = firstParaText + secondParaText;
+var firstParaText = paragraph[0].innerHTML = " "; 
+var secondParaText = paragraph[1].innerHTML = " "; 
+
+var thirdParaText = "paragraph[4].innerHTML; 
+var fourthParaText= paragraph[5].innerHTML; 
+var addThem = paragraph[6].innerHTML = thirdParaText + fourthParaText;
+var thirdParaText = paragraph[4].innerHTML = " "; 
+var fourthParaText = paragraph[5].innerHTML = " "; 
+
+
+var fifthParaText = "paragraph[7].innerHTML; 
+var sixthParaText= paragraph[8].innerHTML; 
+var addThem = paragraph[9].innerHTML = fifthParaText + sixthParaText;
+var fifthParaText = paragraph[7].innerHTML = " "; 
+var sixthParaText = paragraph[8].innerHTML = " "; 
+
+document.getElementById("image1").scr="Angel1.jpg"; 
+document.getElementById("image2").scr="Angel2.jpg"; 
+
+
+} 
+
+function changeText() {
+var text = document.getElementById("head").style.fontFamily = "helvetica"; 
+var text = document.getElementById("head").style.color = "blue"; 
+} 
+
+function backToNormal() {
+var text = document.getElementById("head").style.fontFamily = ""; 
+var text = document.getElementById("head").style.color = ""; 
+} 
+
+
+
+
+
+</script> 
+</head>
+<body> 
+
+
+<h1 id="head" onmouseover="changeText()" onmouseout="backToNormal()"> Poems and Such </h1> 
+<br> 
+<image scr="musicTree.jpg" id="image1"/> 
+<br>
+<br> 
+<h2 class="heads"> Best FRIENDS </h2> 
+
+<p class="para"> Fight for you </p> 
+<p class="para"> Respect you </p> 
+<p class="para"> Include you </p> 
+<p class="para"> Encourage you </p> 
+<p class="para"> Need you </p> 
+<p class="para"> Deserve you </p> 
+<p class="para"> Stand by you </p> 
+
+<br> 
+<br> 
+
+<h2 class="heads"> Best Mates </h2> 
+
+<p class="poem"> 0Together we party, </p> 
+<p class="poem"> 1together we cry. </p> 
+<p class="poem">  </p> 
+
+<p class="poem"> 3Kept every single secret, </p> 
+<p class="poem"> 4and covered every lie. </p> 
+<p class="poem">  </p> 
+
+<p class="poem"> 6'Cuz we're best mates </p> 
+<p class="poem"> 7'til the day we die! </p> 
+<p class="poem">  </p> 
+
+<br> 
+<br> 
+
+<image scr="MusicNotesDecor.jpg" id="image2" /> 
+<br>
+<br> 
+
+<button onclick="changeStyle()"> Update </button> 
+
+<br> 
+
+</body> 
+</html> 
