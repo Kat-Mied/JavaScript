@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1> What is Kat's favorite food? </h1> 
+
+<ul> 
+<li> Ice Cream </li>
+<li> Ramen (the good stuff) </li>
+<li> Burritos </li>
+<li> Peanut Butter </li>
+<li> Bacon  </li>
+<li> Pancakes </li>
+</ul> 
+
+
+<button onclick="findOut()"> Find Out </button> 
+
+<div id="div1"> 
+<p> 
+Answer: 
+</p> 
+</div> 
+
+
+<script>
+function findOut() {
+var para = document.createElement("p"); 
+var node = document.createTextNode("HA! YOU'LL NEVER KNOW!"); 
+para.appendChild(node); 
+var element = document.getElementById("div1"); 
+element.appendChild(para); 
+}
+
+
+</script>
+
+</body>
+</html>
