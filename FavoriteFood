@@ -8,77 +8,48 @@
 <li> Ice Cream </li>
 <li> Ramen (the good stuff) </li>
 <li> Burritos </li>
-<li> Peanut Butter </li>
+<div id="li1"> <li> Peanut Butter </li></div> 
 <li> Bacon  </li>
 <li> Pancakes </li>
 </ul> 
 
-<button onclick="findOut()"> Find Out </button> 
-
-<div id="div1"> 
-<p> 
-Answer: 
-</p> 
-</div> 
+<button onclick="answerFood()"> Find Out </button> 
 
 <h1> What is Kat's favorite food? </h1> 
 
 <ul> 
 <li> Beer </li>
 <li> Wine </li>
-<li> Coffee </li>
+<div id="li2"> <li> Coffee </li> </div> 
 <li> Tea </li>
 </ul> 
 
-<button onclick="answerDrink()"> Find Out </button> 
-
-<div id="div2"> 
-<p> 
-Answer: 
-</p> 
-</div> 
+<button onclick="answerDrink()"> What'cha Think? </button> 
 
 <h1> What is Kat's favorite color? </h1> 
 
 <ul> 
 <li> Black </li>
-<li> Blue </li>
+<div id="li3"> <li> Blue </li></div> 
 <li> Purple </li>
 <li> Green </li>
 </ul> 
 
 <button onclick="answerColor()"> Feeling Lucky? </button> 
 
-<div id="div3"> 
-<p> Answer: </p> 
-</div> 
-
 <script>
-function findOut() {
-var para = document.createElement("p"); 
-var node = document.createTextNode("HA! YOU'LL NEVER KNOW!"); 
-para.appendChild(node); 
-var element = document.getElementById("div1"); 
-element.appendChild(para); 
+function answerFood() {
+var paragrah = document.getElementById ("li1").style.color = "red"; 
 }
 
 function answerDrink() {
-var para = document.createElement("p"); 
-var node = document.createTextNode("The suspense!"); 
-para.appendChild(node); 
-var element = document.getElementById("div2"); 
-element.appendChild(para); 
+var paragraph = document.getElementById("li2").style.color = "red"; 
 }
 
 function answerColor() {
-var para = document.createElement("p"); 
-var node = document.createTextNode("Third time's the charm! It's Blue ^_^"); 
-para.appendChild(node); 
-var element = document.getElementById("div3"); 
-element.appendChild(para); 
+var paragraph = document.getElementById("li3").style.color = "red"; 
 } 
 
 </script>
-
 </body>
 </html>
