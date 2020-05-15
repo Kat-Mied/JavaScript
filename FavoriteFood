@@ -13,7 +13,6 @@
 <li> Pancakes </li>
 </ul> 
 
-
 <button onclick="findOut()"> Find Out </button> 
 
 <div id="div1"> 
@@ -22,6 +21,37 @@ Answer:
 </p> 
 </div> 
 
+<h1> What is Kat's favorite food? </h1> 
+
+<ul> 
+<li> Beer </li>
+<li> Wine </li>
+<li> Coffee </li>
+<li> Tea </li>
+</ul> 
+
+<button onclick="answerDrink()"> Find Out </button> 
+
+<div id="div2"> 
+<p> 
+Answer: 
+</p> 
+</div> 
+
+<h1> What is Kat's favorite color? </h1> 
+
+<ul> 
+<li> Black </li>
+<li> Blue </li>
+<li> Purple </li>
+<li> Green </li>
+</ul> 
+
+<button onclick="answerColor()"> Feeling Lucky? </button> 
+
+<div id="div3"> 
+<p> Answer: </p> 
+</div> 
 
 <script>
 function findOut() {
@@ -32,6 +62,21 @@ var element = document.getElementById("div1");
 element.appendChild(para); 
 }
 
+function answerDrink() {
+var para = document.createElement("p"); 
+var node = document.createTextNode("The suspense!"); 
+para.appendChild(node); 
+var element = document.getElementById("div2"); 
+element.appendChild(para); 
+}
+
+function answerColor() {
+var para = document.createElement("p"); 
+var node = document.createTextNode("Third time's the charm! It's Blue ^_^"); 
+para.appendChild(node); 
+var element = document.getElementById("div3"); 
+element.appendChild(para); 
+} 
 
 </script>
 
