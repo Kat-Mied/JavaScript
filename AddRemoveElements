@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1> Kat needs the drinks! </h1> 
+<p>An unordered list:</p>
+<div id="list"> 
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Juice</li>
+  <li>Beer</li> 
+  <li>Wine</li> 
+</ul>
+</div> 
+
+<br> 
+<button onclick="answer()"> Kat's Favorite </button> 
+<br> 
+<div id="div1"><p> </p> </div> 
+
+<p id="vanish"> These are the kinds of things Kat will drink. Notice, Kool-aid isn't on there. That's because Kat isn't a conspiracy theorist and won't be drinking anyone's propaganda. </p> 
+
+<p id="vanish"> "But that's not possible!" you might think. "Everyone is influenced/exposed to/believes SOME propaganda!" <b> True.</b> However, Kat avoids this by simply, NOT KNOWING ANYTHING!</p> 
+
+<p id="vanish"> Is global warming a thing? Kat doesn't know what global warming is. Is the lockdown from Covid-19 legit, prolonging the inevetable, or a hoax? KAT DOESN'T CARE, AS LONG AS SHE DOESN'T HAVE TO WORK!</p> 
+
+<p id="vanish"> Genius, huh? </p> 
+</div> 
+
+<button onclick="removeAll()"> Other Thoughts </button> 
+
+<script>
+function answer() {
+var para = document.createElement("p");
+var node = document.createTextNode("Doesn't matter...she likes all these. Pick one and call it good."); 
+para.appendChild(node); 
+var element = document.getElementById("div1"); 
+element.appendChild(para); 
+} 
+
+function removeAll() {
+var myobj = document.getElementById("vanish"); 
+myobj.remove(); 
+}
+
+</script>
+
+<style> 
+
+body {
+background: gray; 
+color: white; 
+font-size: 25; 
+} 
+
+#list {
+border: 2px solid black; 
+border-radius: 5px; 
+color: black; 
+} 
+
+</style> 
+</body>
+</html>
