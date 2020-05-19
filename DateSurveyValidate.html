@@ -1,0 +1,141 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<style> 
+
+#theForm {
+color:white;
+display: table;
+padding: 15px;
+background-color: #2C8F77;
+border: solid 2px black;
+}
+ 
+.row {
+display: table-row;
+}
+ 
+.row label {
+display: table-cell;
+padding: 2px;
+text-align:right; 
+}
+ 
+.row input {
+display: table-cell;
+padding: 2px;
+}
+
+</style> 
+
+</head> 
+<body> 
+
+<h1> Request to Date My Daughter Form </h1> 
+<h2> Fill out the form below and click "Submit" </h2> 
+<form id="theForm" action="message.html" method="post" onSubmit="return validateForm();"> 
+
+<div class="row"> 
+<label for="name"> Full Name: </label> 
+<input type="text" id="name" name=""> 
+</div>  
+
+<br> 
+
+<div class="row"> 
+<label for="address"> Address: </label> 
+<input type="text" id="address" name=""> 
+</div> 
+
+<br> 
+
+<div class="row"> 
+<label for="phone"> Phone: </label> 
+<input type="tel" id="phone" name=""> 
+</div> 
+
+<br> 
+
+<div class="row"> 
+<label for="email"> Email: </label> 
+<input type="email" id="email" name=""> 
+</div> 
+
+<br> 
+
+<div class="row"> 
+<label for="purpose"> Intent on Date: </label> 
+<input type="text" id="purpose" name=""> 
+</div> 
+
+<br> 
+
+<div class="row"> 
+<label for="opinion"> Opinion: </label> 
+<input type="text" id="opinion" name=""> 
+</div> 
+<br>
+
+<input type="submit" value="Submit"> 
+
+</form> 
+</body> 
+<script> 
+
+function validateForm() {
+var name = document.getElementById("name"); 
+var address = document.getElementById("address"); 
+var phone = document.getElementById("phone"); 
+var email = document.getElementById("email");
+var purpose = document.getElementById("purpose"); 
+var opinion = document.getElementById("opinion"); 
+
+if (name.value == "") {
+alert ("FILL OUT THE FORM, YA PANSY!"); 
+name.focus (); 
+name.style.border = "solid 3px red"; 
+return false; 
+}
+
+if (address.value == "") {
+alert ("FILL OUT THE FORM, YA PANSY!"); 
+address.focus (); 
+address.style.border = "solid 3px red"; 
+return false; 
+}
+
+if (phone.value == "") {
+alert ("FILL OUT THE FORM, YA PANSY!"); 
+phone.focus (); 
+phone.style.border = "solid 3px red"; 
+return false; 
+}
+
+if (email.value == "") {
+alert ("FILL OUT THE FORM, YA PANSY!"); 
+email.focus (); 
+email.style.border = "solid 3px red"; 
+return false; 
+}
+
+if (purpose.value == "") {
+alert ("You can tell me..."); 
+purpose.focus (); 
+purpose.style.border = "solid 3px red"; 
+return false; 
+}
+
+if (opinion.value == "") {
+alert ("It honestly doesn't matter what you put... It just needs to have something."); 
+opinion.focus (); 
+opinion.style.border = "solid 3px red"; 
+return false; 
+}
+
+} 
+
+ 
+
+
+</script> 
+</html> 
