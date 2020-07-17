@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        body {
+            color: black;
+            font-size: 20px;
+            text-align: center;
+            background-color: #47afcc;
+        }
+
+        #rectangle {
+            background-color: darkgray;
+            border: 4px ridge black;
+            width: 80px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #redLight {
+            height: 60px;
+            width: 60px;
+            margin: 10px;
+            background-color: gray;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        #yellowLight {
+            height: 60px;
+            width: 60px;
+            margin: 10px;
+            background-color: gray;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        #greenLight {
+            height: 60px;
+            width: 60px;
+            margin: 10px;
+            background-color: gray;
+            border-radius: 50%;
+            display: inline-block;
+        }
+    </style>
+    <title> Change the Traffic Light </title>
+</head>
+<body>
+    <h1> Change the Traffic Light </h1>
+    <p> Click the buttons to change the lights. </p>
+    <br>
+
+    <div id="rectangle">
+        </br>
+        <span id="redLight"> </span>
+        <br>
+        <span id="yellowLight"> </span>
+        <br>
+        <span id="greenLight"> </span>
+        </br>
+
+    </div>
+    </br>
+    </br>
+
+    <button onclick="red()">RED</button>
+    <button onclick="yellow()">YELLOW</button>
+    <button onclick="green()">GREEN</button>
+    <br>
+    <p> Wasn't that fun? </p>
+
+
+    <script>
+
+        function red() {
+            document.getElementById("redLight").style.backgroundColor = "red";
+            document.getElementById("yellowLight").style.backgroundColor = "gray";
+            document.getElementById("greenLight").style.backgroundColor = "gray";
+        };
+
+
+
+        function yellow() {
+            document.getElementById("yellowLight").style.backgroundColor = "yellow";
+            document.getElementById("redLight").style.backgroundColor = "gray";
+            document.getElementById("greenLight").style.backgroundColor = "gray";
+        };
+
+        function green() {
+            document.getElementById("greenLight").style.backgroundColor = "green";
+            document.getElementById("yellowLight").style.backgroundColor = "gray";
+            document.getElementById("redLight").style.backgroundColor = "gray";
+        };
+
+    </script>
+
+</body>
+</html>
+
